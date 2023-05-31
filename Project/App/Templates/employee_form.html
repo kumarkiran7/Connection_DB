@@ -1,0 +1,21 @@
+<!-- employee_form.html -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Employee</title>
+</head>
+<body bgcolor="grey">
+    <center><h1>EMPLOYEE INFORMATION</h1></center>
+    <center>
+    <form method="POST">
+        {% csrf_token %}
+        
+        {{ form.as_p }}
+        
+        <button type="submit">SUBMIT</button>
+    </form>
+    </center>
+</body>
+</html>
